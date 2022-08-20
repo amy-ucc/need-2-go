@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap3',
-    'reviews'
+    'reviews',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -114,6 +115,15 @@ USE_I18N = True
 USE_TZ = True
 
 
+#Might be needed
+'''
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
+'''
+#Might be needed, unknown as of yet
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn')
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
@@ -123,3 +133,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+GOOGLE_API_KEY = "AIzaSyDCw8PksTILy9rUHztR-5t630gv13ibM4U"
+
+RECAPTCHA_KEY = "6LdnS5AhAAAAANqScAh3JQsyih0ML97Kxp9RNKIz"
+
+RECAPTCHA_SECRET_KEY = "6LdnS5AhAAAAACOy6LJBjn9vy3RAm5OKBzfT6M6T"
+
+BASE_COUNTRY = "CA"
